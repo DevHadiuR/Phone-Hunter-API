@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,9 +18,44 @@
       }
     </style>
   </head>
-  <body>
-    <header></header>
-    <main></main>
+  <body class="text-black font-[poppins]">
+    <header class="bg-[#0D6EFD0D]">
+      <section class="container mx-auto pt-14 pb-14">
+        <nav class="flex items-center justify-between mb-10">
+          <h2 class="text-2xl font-bold">Hot Gadgets</h2>
+          <button class="btn btn-primary">Sign Up</button>
+        </nav>
+        <div class="flex flex-col items-center gap-5">
+          <h1 class="text-6xl font-bold">Apple Iphone 13 Pro Max</h1>
+          <p class="w-[55%] mx-auto text-center">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humou.
+          </p>
+          <button class="btn btn-primary">Buy Now</button>
+        </div>
+      </section>
+    </header>
+    <main class="container mx-auto mt-14">
+      <h1 class="text-3xl font-semibold text-center mb-5">Search your phone</h1>
+      <div class="flex w-[55%] mx-auto">
+        <input
+          type="text"
+          placeholder="Search your phone"
+          class="input input-bordered w-full border-r-0 rounded-r-sm"
+        />
+        <button class="btn btn-primary">Search</button>
+      </div>
+
+      <section class="mt-10">
+        <div
+          id="phone-container"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
+        >
+          <!-- cards will append dynamically -->
+        </div>
+      </section>
+    </main>
     <footer></footer>
 
     <!-- ---------scripts------- -->
